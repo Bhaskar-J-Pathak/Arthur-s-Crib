@@ -9,30 +9,36 @@ import React from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
 
+// Assuming each item in Skill_data, Frontend_skill, Backend_skill, Full_stack, and Other_skill has Image, width, and height properties
+interface SkillItem {
+  Image: string;
+  width: number;
+  height: number;
+}
+
 const Skills = () => {
   return (
     <section
       id="skills"
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
-      style={{ transform: "scale(0.9" }}
+      style={{ transform: "scale(0.9)" }}
     >
       <SkillText />
 
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Skill_data.map((image, index) => (
-         <SkillDataProvider
-  key={index}
-  src={image?.Image}
-  width={image?.width}
-  height={image?.height}
-  index={index}
-/>
+        {Skill_data.map((image: SkillItem, index: number) => (
+          <SkillDataProvider
+            key={index}
+            src={image?.Image}
+            width={image?.width}
+            height={image?.height}
+            index={index}
+          />
+        ))}
+      </div>
 
-        ))}
-      </div>
-
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Frontend_skill.map((image, index) => (
+        {Frontend_skill.map((image: SkillItem, index: number) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
@@ -43,7 +49,7 @@ const Skills = () => {
         ))}
       </div>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Backend_skill.map((image, index) => (
+        {Backend_skill.map((image: SkillItem, index: number) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
@@ -54,7 +60,7 @@ const Skills = () => {
         ))}
       </div>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Full_stack.map((image, index) => (
+        {Full_stack.map((image: SkillItem, index: number) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
@@ -65,7 +71,7 @@ const Skills = () => {
         ))}
       </div>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Other_skill.map((image, index) => (
+        {Other_skill.map((image: SkillItem, index: number) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
