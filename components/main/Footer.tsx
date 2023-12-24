@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
 
             <div className="mb-[20px] text-[15px] text-center">
-                &copy; Bhaskar J Pathak Dev 2023 Inc. All rights reserved
+                &copy; Bhaskar J Pathak
             </div>
         </div>
     </div>
