@@ -113,7 +113,7 @@ const Footer = () => {
                 href="mailto:bhaskarjy49@gmail.com"
                 className="text-[15px] ml-[6px]"
               >
-                bhaskatjy49@gmail.com
+                bhaskarjy49@gmail.com
               </a>
             </p>
           </div>
