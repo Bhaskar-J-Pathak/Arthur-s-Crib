@@ -14,7 +14,7 @@ const Projects = () => {
         <ProjectCard
           src="/NextWebsite.png"
           title="FindNest"
-          description="This is a Hotel, Apartment and PG booking web app that I plan on making."
+          description="This is a Hotel, Apartment and PG booking web app that is in the making."
         />
         <ProjectCard
           src="/CardImage.png"
