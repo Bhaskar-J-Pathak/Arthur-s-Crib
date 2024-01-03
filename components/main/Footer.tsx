@@ -119,9 +119,6 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mb-[20px] text-[15px] text-center">
-          &copy; WebChain Dev 2023 Inc. All rights reserved
-        </div>
       </div>
     </div>
   );
