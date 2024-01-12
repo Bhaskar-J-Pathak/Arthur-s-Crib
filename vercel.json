@@ -1,6 +1,6 @@
 {
     "routes": [
-      { "src": "/pdf", "dest": "/server.js" }
+      { "src": "/pdf", "dest": "/pdf-server/server.js" }
     ]
   }
   
