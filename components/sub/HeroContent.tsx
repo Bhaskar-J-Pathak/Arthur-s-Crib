@@ -11,7 +11,8 @@ import Image from "next/image";
 
 const HeroContent = () => {
   const handleLearnMoreClick = () => {
-    window.open("https://arthur-s-crib.vercel.app/pdf", "_blank");
+    // window.open("https://arthur-s-crib.vercel.app/pdf", "_blank");
+      window.open("https://www.google.co.in/", "_blank");
   };
 
   return (
